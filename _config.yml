@@ -7,7 +7,6 @@ first_name: Zhihao
 middle_name:
 last_name: Zheng
 contact_note: >
-  Email is the best way to reach me.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Personal website of Zhihao Zheng. Researcher in communication engineering, AI for 6G, and multimodal perception.
 footer_text: >
