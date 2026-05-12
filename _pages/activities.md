@@ -1,6 +1,6 @@
 ---
 layout: page
-title: activities
+title: Activities
 permalink: /activities/
 description: recent academic and personal activities
 nav: true

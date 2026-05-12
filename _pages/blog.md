@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: murmurs
+title: Murmurs
 nav: true
 nav_order: 5
 pagination:
