@@ -40,4 +40,4 @@ Outside of research, I enjoy:
 - **Running** — staying active and exploring trails
 - **Cycling** — long rides and city cycling
 - **Travel** — discovering new places and cultures
-- **Reading** — sci-fi and technology history
+- **Reading** — biographies
