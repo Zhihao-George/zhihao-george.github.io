@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Master's student @ Tsinghua University
+subtitle: Master's student @ Dept. of Electronic Engineering, Tsinghua University
 
 profile:
   align: right
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3
 ---
 
-Hi, I'm Zhihao Zheng (郑志浩), a Master's student in Information and Communication Engineering at **Tsinghua University** (2023-2026). I received my B.E. in Communication Engineering from **Tianjin University** (2019-2023).
+Hi, I'm Zhihao Zheng (郑志浩), a Master's student at the **Department of Electronic Engineering, Tsinghua University** (2023-2026). I received my B.E. in Communication Engineering from **Tianjin University** (2019-2023).
 
 My research interests lie in **perception** and **Vision-Language-Action (VLA)** models, with a focus on multimodal understanding and embodied intelligence.
 
