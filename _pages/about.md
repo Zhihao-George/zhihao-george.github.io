@@ -28,7 +28,7 @@ Hi, I'm Zhihao Zheng (郑志浩), a Master's student in Information and Communic
 
 My research interests lie at the intersection of **AI and wireless communications**, with a focus on integrated sensing and communication (ISAC), radio map prediction, and multimodal perception. I'm currently working on AI-native base stations for 6G networks.
 
-Previously, I interned at **Zhiyuan Robot** (智元机器人), where I worked on robotics solutions and fine-tuned the RDT1B model using IDC techniques for real-world deployment.
+Previously, I interned at **Zhiyuan Robot** (智元机器人).
 
 ### 📬 Contact
 
@@ -41,3 +41,17 @@ Outside of research, I enjoy:
 - **Running** — training for half-marathons
 - **Reading** — sci-fi and technology history
 - **Travel** — exploring new cities and their local food scenes
+
+### 🏃 Recent Activities
+
+<div class="row mt-3">
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/activities/placeholder1.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/activities/placeholder2.jpg" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Upload your photos here — academic events, daily life, or anything you'd like to share. Replace the placeholder images in `assets/img/activities/`.
+</div>

@@ -25,10 +25,10 @@ cv:
 
   work:
     - company: Zhiyuan Robot (智元机器人)
-      position: Robotics Solutions Intern
+      position: Intern
       start_date: 2025-06
       end_date: 2025-08
-      summary: Developed undergraduate courses based on Zhiyuan G1 robot. Fine-tuned RDT1B model using IDC techniques with real-world data. Deployed and validated the model on actual hardware.
+      summary: Worked on robotics development and model fine-tuning at Zhiyuan Robot.
 
   publications:
     - title: "Efficient Indoor Radio Map Prediction with Improved Transformers and Active Sampling Strategies"
