@@ -34,10 +34,10 @@ Previously, I interned at **Zhiyuan Robot** (智元机器人).
 
 **Email**: [zhengzh23@mails.tsinghua.edu.cn](mailto:zhengzh23@mails.tsinghua.edu.cn)
 
-### 🎯 Interests
+### Interests
 
 Outside of research, I enjoy:
-- **Photography** — capturing urban architecture and natural landscapes
-- **Running** — training for half-marathons
+- **Running** — staying active and exploring trails
+- **Cycling** — long rides and city cycling
+- **Travel** — discovering new places and cultures
 - **Reading** — sci-fi and technology history
-- **Travel** — exploring new cities and their local food scenes
