@@ -1,0 +1,48 @@
+cv:
+  name: Zhihao Zheng
+  label: Master's Student in Information and Communication Engineering
+  email: zhengzh23@mails.tsinghua.edu.cn
+  location: Beijing, China
+  image: ""
+  summary: Master's student at Tsinghua University, researching AI for wireless communications, integrated sensing and communication, and multimodal perception.
+
+  social_networks:
+    - network: GitHub
+      username: Zhihao-George
+
+  education:
+    - institution: Tsinghua University
+      area: Information and Communication Engineering
+      studyType: Master of Engineering
+      start_date: 2023
+      end_date: 2026
+
+    - institution: Tianjin University
+      area: Communication Engineering
+      studyType: Bachelor of Engineering
+      start_date: 2019
+      end_date: 2023
+
+  work:
+    - company: Zhiyuan Robot (智元机器人)
+      position: Robotics Solutions Intern
+      start_date: 2025-06
+      end_date: 2025-08
+      summary: Developed undergraduate courses based on Zhiyuan G1 robot. Fine-tuned RDT1B model using IDC techniques with real-world data. Deployed and validated the model on actual hardware.
+
+  publications:
+    - title: "Efficient Indoor Radio Map Prediction with Improved Transformers and Active Sampling Strategies"
+      venue: MLSP 2025 (IEEE Signal Processing Society Conference)
+      authors: Zhihao Zheng et al.
+
+    - title: "mmSRFormer: Efficient Transformer for Sparse mmWave Radar Point Cloud Super-Resolution"
+      venue: ICASSP 2026 (CCF-B)
+      authors: Zhihao Zheng et al.
+
+    - title: "EVAFusion: Environment-Aware Fusion with Conditional Modulation for Multimodal Segmentation"
+      venue: Under Review
+      authors: Zhihao Zheng et al.
+
+  projects:
+    - name: AI-Native Base Station for 6G
+      description: Research on integrated sensing and communication (ISAC). Channel estimation based on 5G SRS signals. Target ranging and velocity estimation using 2D FFT algorithm. Achieved RMSE of 0.45m in distance and 0.4m/s in velocity at 200MHz bandwidth.
