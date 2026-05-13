@@ -11,6 +11,12 @@ profile:
   more_info: >
 
 selected_papers: true
+show_activities: true
+activity_images:
+  - path: assets/img/activities/icassp2026/mmexport1778224437639.jpg
+    alt: ICASSP 2026
+  - path: assets/img/activities/Wuxi-marathon/mmexport906b9d11892f53170c509c1f8d4dc79f_1774156377532.JPG
+    alt: Wuxi Marathon
 social: true
 
 announcements:
