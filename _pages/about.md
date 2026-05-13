@@ -34,7 +34,7 @@ Hi, I'm Zhihao Zheng (郑志浩, George), a Master's student at the **Department
 
 My research interests lie in **perception** and **Vision-Language-Action (VLA)** models, with a focus on multimodal understanding and embodied intelligence.
 
-Previously, I interned at **Zhiyuan Robot** (智元机器人).
+Previously, I interned at **AGIBOT** (智元机器人).
 
 ### 📬 Contact
 
