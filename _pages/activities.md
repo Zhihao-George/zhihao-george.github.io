@@ -9,7 +9,7 @@ images:
   lightbox2: true
 ---
 
-<h4><a href="{{ '/activities/' | relative_url }}#icassp2026" style="color: inherit;">ICASSP 2026 — Barcelona</a></h4>
+<h4><a href="{{ '/activities/' | relative_url }}#icassp2026" style="color: inherit;">ICASSP 2026 — Barcelona</a> <small class="text-muted">May 3–9, 2026</small></h4>
 <p>Presented our work <em>MMSRFormer</em> at ICASSP 2026 in Barcelona. It was an amazing experience — met so many interesting people from all over the world and had a truly unforgettable journey.</p>
 
 <div class="row mt-3" id="icassp2026">
@@ -27,7 +27,7 @@ images:
 
 <hr>
 
-<h4><a href="{{ '/activities/' | relative_url }}#wuxi-marathon" style="color: inherit;">Wuxi Marathon 2025</a></h4>
+<h4><a href="{{ '/activities/' | relative_url }}#wuxi-marathon" style="color: inherit;">Wuxi Marathon 2026</a> <small class="text-muted">March 23, 2026</small></h4>
 <p>Haven't been training seriously for a year, but still managed to finish in 3:30 — a result I'm quite happy with! The Wuxi Marathon was a fantastic experience overall.</p>
 
 <div class="row mt-3" id="wuxi-marathon">
