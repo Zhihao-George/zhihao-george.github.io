@@ -10,7 +10,7 @@ images:
 ---
 
 <style>
-.activity-photo img {
+.activity-photo {
     height: 250px;
     object-fit: cover;
     width: 100%;
