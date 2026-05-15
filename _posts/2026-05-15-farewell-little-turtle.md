@@ -2,6 +2,7 @@
 title: Farewell, Little Turtle
 date: 2026-05-15
 description: Rest in peace, little one.
+thumbnail: assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg
 images:
   lightbox2: true
 ---

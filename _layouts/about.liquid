@@ -77,7 +77,24 @@ layout: default
       <h2>
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Murmurs</a>
       </h2>
-      {% include latest_posts.liquid %}
+      <div class="row mt-2">
+        {% assign latest_posts_limit = page.latest_posts.limit | default: 3 %}
+        {% for item in site.posts limit: latest_posts_limit %}
+          <div class="col-sm-6 mt-3">
+            <a href="{{ item.url | relative_url }}" style="text-decoration: none; color: inherit;">
+              <div class="card" style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
+                {% if item.thumbnail %}
+                  <img src="{{ item.thumbnail | relative_url }}" class="card-img-top" style="height: 200px; object-fit: cover; width: 100%;" alt="{{ item.title }}">
+                {% endif %}
+                <div class="card-body" style="padding: 15px;">
+                  <h5 class="card-title" style="margin: 0 0 8px 0; font-size: 1rem;">{{ item.title }}</h5>
+                  <p class="card-text" style="margin: 0; color: #888; font-size: 0.85rem;">{{ item.date | date: '%b %d, %Y' }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     {% endif %}
 
     <!-- Social -->
