@@ -128,7 +128,7 @@ pagination:
           <span style="font-size: 1.1rem; font-weight: 500;">{{ post.title }}</span>
           <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ post.date | date: '%b %d, %Y' }}</span>
         </div>
-        <span class="blog-toggle" id="blog-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">查看更多 ▾</span>
+        <span class="blog-toggle" id="blog-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">View more ▾</span>
       </div>
       <div id="blog-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
         <div class="blog-post-content">{{ post.content }}</div>
@@ -146,10 +146,10 @@ pagination:
       var toggle = document.getElementById('blog-toggle-' + idx);
       if (el.style.display === 'none') {
         el.style.display = 'block';
-        toggle.textContent = '收起 ▴';
+        toggle.textContent = 'Collapse ▴';
       } else {
         el.style.display = 'none';
-        toggle.textContent = '查看更多 ▾';
+        toggle.textContent = 'View more ▾';
       }
     }
   </script>

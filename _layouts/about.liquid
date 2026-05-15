@@ -85,7 +85,7 @@ layout: default
               <span style="font-size: 1rem; font-weight: 500;">{{ item.title }}</span>
               <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ item.date | date: '%b %d, %Y' }}</span>
             </div>
-            <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">查看更多 ▾</span>
+            <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">View more ▾</span>
           </div>
           <div id="murmur-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
             <div class="murmur-content">{{ item.content }}</div>
@@ -99,10 +99,10 @@ layout: default
           var toggle = document.getElementById('murmur-toggle-' + idx);
           if (el.style.display === 'none') {
             el.style.display = 'block';
-            toggle.textContent = '收起 ▴';
+            toggle.textContent = 'Collapse ▴';
           } else {
             el.style.display = 'none';
-            toggle.textContent = '查看更多 ▾';
+            toggle.textContent = 'View more ▾';
           }
         }
       </script>
