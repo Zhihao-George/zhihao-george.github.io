@@ -4,6 +4,8 @@ permalink: /blog/
 title: Murmurs
 nav: true
 nav_order: 5
+images:
+  lightbox2: true
 pagination:
   enabled: true
   collection: posts
