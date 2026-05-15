@@ -4,6 +4,7 @@ description: An explainable radio map prediction framework via physical alignmen
 importance: 1
 category: work
 github: https://github.com/Zhihao-George/RadioMap-XAI
+redirect: https://github.com/Zhihao-George/RadioMap-XAI
 ---
 
 An open-source implementation of **"Beyond Accuracy: An Explainable Radio Map Prediction Framework via Physical Alignment and Attribution-Based Diagnostics"**.
