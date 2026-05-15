@@ -101,7 +101,7 @@ pagination:
 
 {% endif %}
 
-  <ul class="post-list">
+  <ul class="post-list" style="list-style: none; padding: 0;">
 
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
@@ -120,74 +120,37 @@ pagination:
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
-    <li>
-
-{% if post.thumbnail %}
-
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
-      </p>
-      <p class="post-tags">
-        <a href="{{ year | prepend: '/blog/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
-
-{% if post.thumbnail %}
-
-</div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{% endif %}
+    <li style="border-bottom: 1px solid #eee; padding: 1.5rem 0;">
+      <div style="display: flex; align-items: center; gap: 15px; cursor: pointer;" onclick="toggleBlogPost('blog-{{ forloop.index }}')">
+        <div style="flex: 1;">
+          <span style="font-size: 1.1rem; font-weight: 500;">{{ post.title }}</span>
+          <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ post.date | date: '%b %d, %Y' }}</span>
+        </div>
+        <span class="blog-toggle" id="blog-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">查看更多 ▾</span>
+      </div>
+      <div id="blog-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
+        <div class="blog-post-content">{{ post.content }}</div>
+      </div>
     </li>
 
     {% endfor %}
 
   </ul>
+
+  <script>
+    function toggleBlogPost(id) {
+      var el = document.getElementById(id);
+      var idx = id.split('-')[1];
+      var toggle = document.getElementById('blog-toggle-' + idx);
+      if (el.style.display === 'none') {
+        el.style.display = 'block';
+        toggle.textContent = '收起 ▴';
+      } else {
+        el.style.display = 'none';
+        toggle.textContent = '查看更多 ▾';
+      }
+    }
+  </script>
 
 {% if page.pagination.enabled %}
 {% include pagination.liquid %}
