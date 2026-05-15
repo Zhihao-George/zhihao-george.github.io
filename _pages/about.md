@@ -47,3 +47,7 @@ Outside of research, I enjoy:
 - **Cycling** — long rides and city cycling
 - **Travel** — discovering new places and cultures
 - **Reading** — biographies
+
+### Personality
+
+**ISFJ** (Defender)
