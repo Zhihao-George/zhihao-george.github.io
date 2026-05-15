@@ -48,7 +48,7 @@ latest_posts:
 ### <span data-i18n-en="Interests" data-i18n-zh="兴趣爱好">Interests</span>
 
 <span data-i18n-en="Outside of research, I enjoy:" data-i18n-zh="科研之外，我喜欢：">Outside of research, I enjoy:</span>
-- <strong><span data-i18n-en="Running" data-i18n-zh="跑步">Running</span></strong> — <span data-i18n-en="marathon PB 3:14, half marathon PB 1:24" data-i18n-zh="全马PB 3:14，半马PB 1:24">marathon PB 3:14, half marathon PB 1:24</span>
+- <strong><span data-i18n-en="Running" data-i18n-zh="跑步">Running</span></strong> — <span data-i18n-en="Marathon PB 3:14, Half Marathon PB 1:24" data-i18n-zh="全马PB 3:14，半马PB 1:24">Marathon PB 3:14, Half Marathon PB 1:24</span>
 - <strong><span data-i18n-en="Cycling" data-i18n-zh="骑行">Cycling</span></strong> — <span data-i18n-en="long rides and city cycling" data-i18n-zh="长途骑行与城市骑行">long rides and city cycling</span>
 - <strong><span data-i18n-en="Travel" data-i18n-zh="旅行">Travel</span></strong> — <span data-i18n-en="discovering new places and cultures" data-i18n-zh="探索新地方和文化">discovering new places and cultures</span>
 - <strong><span data-i18n-en="Reading" data-i18n-zh="阅读">Reading</span></strong> — <span data-i18n-en="biographies" data-i18n-zh="传记">biographies</span>
