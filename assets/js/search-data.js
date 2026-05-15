@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-hello-world",
+        },{id: "post-farewell-little-turtle",
+        
+          title: "Farewell, Little Turtle",
+        
+        description: "Rest in peace, little one.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/farewell-little-turtle/";
+          
+        },
+      },{id: "post-hello-world",
         
           title: "Hello World!",
         
