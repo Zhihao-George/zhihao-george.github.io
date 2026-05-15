@@ -68,7 +68,12 @@ ninja.data = [{
           section: "News",},{id: "news-started-my-master-s-program-at-tsinghua-university-department-of-electronic-engineering",
           title: 'Started my Master’s program at Tsinghua University, Department of Electronic Engineering.',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-radiomap-xai",
+          title: 'RadioMap-XAI',
+          description: "An explainable radio map prediction framework via physical alignment and attribution-based diagnostics.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/radiomap-xai/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
