@@ -26,8 +26,8 @@ pagination:
 {% if blog_name_size > 0 or blog_description_size > 0 %}
 
   <div class="header-bar">
-    <h1>{{ site.blog_name }}</h1>
-    <h2>{{ site.blog_description }}</h2>
+    <h1><span data-i18n-en="Murmurs" data-i18n-zh="碎碎念">{{ site.blog_name }}</span></h1>
+    <h2><span data-i18n-en="random thoughts, daily musings, and ideas" data-i18n-zh="一些日常碎碎念、想法和生活记录">{{ site.blog_description }}</span></h2>
   </div>
   {% endif %}
 
@@ -128,7 +128,7 @@ pagination:
           <span style="font-size: 1.1rem; font-weight: 500;">{{ post.title }}</span>
           <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ post.date | date: '%b %d, %Y' }}</span>
         </div>
-        <span class="blog-toggle" id="blog-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">View more ▾</span>
+        <span class="blog-toggle" id="blog-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;" data-state="closed"><span data-lang="en">View more ▾</span><span data-lang="zh" style="display: none;">查看更多 ▾</span></span>
       </div>
       <div id="blog-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
         <div class="blog-post-content">{{ post.content }}</div>
@@ -140,16 +140,24 @@ pagination:
   </ul>
 
   <script>
+    function setBlogToggleLabel(toggle, expanded) {
+      toggle.setAttribute('data-state', expanded ? 'open' : 'closed');
+      toggle.innerHTML = expanded
+        ? '<span data-lang="en">Collapse ▴</span><span data-lang="zh" style="display: none;">收起 ▴</span>'
+        : '<span data-lang="en">View more ▾</span><span data-lang="zh" style="display: none;">查看更多 ▾</span>';
+      if (window.applySiteLanguage) window.applySiteLanguage();
+    }
+
     function toggleBlogPost(id) {
       var el = document.getElementById(id);
       var idx = id.split('-')[1];
       var toggle = document.getElementById('blog-toggle-' + idx);
       if (el.style.display === 'none') {
         el.style.display = 'block';
-        toggle.textContent = 'Collapse ▴';
+        setBlogToggleLabel(toggle, true);
       } else {
         el.style.display = 'none';
-        toggle.textContent = 'View more ▾';
+        setBlogToggleLabel(toggle, false);
       }
     }
   </script>

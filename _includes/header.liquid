@@ -49,7 +49,7 @@
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
+              <span data-i18n-en="About" data-i18n-zh="关于">{{- about_title }}</span>
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -108,7 +108,13 @@
                     {%- assign url = p.url -%}
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
-                    {{- p.title }}
+                    {%- assign nav_zh = p.title -%}
+                    {%- if p.title == 'Publications' -%}{%- assign nav_zh = '出版物' -%}
+                    {%- elsif p.title == 'Activities' -%}{%- assign nav_zh = '活动' -%}
+                    {%- elsif p.title == 'Projects' -%}{%- assign nav_zh = '项目' -%}
+                    {%- elsif p.title == 'Murmurs' -%}{%- assign nav_zh = '碎碎念' -%}
+                    {%- endif -%}
+                    <span data-i18n-en="{{ p.title }}" data-i18n-zh="{{ nav_zh }}">{{- p.title }}</span>
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -125,6 +131,13 @@
               </button>
             </li>
           {% endif %}
+          <li class="nav-item lang-toggle-container">
+            <button id="lang-toggle" class="lang-toggle" type="button" onclick="toggleLang()" aria-label="Switch language">
+              <span data-lang-choice="en">EN</span>
+              <span class="lang-toggle-divider">/</span>
+              <span data-lang-choice="zh">中</span>
+            </button>
+          </li>
           {% if site.enable_darkmode %}
             <!-- Toogle theme mode -->
             <li class="toggle-container">

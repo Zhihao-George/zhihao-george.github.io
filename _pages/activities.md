@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Activities
+title_en: Activities
+title_zh: 活动
 permalink: /activities/
-description: recent academic and personal activities
+description_en: recent academic and personal activities
+description_zh: 学术与个人活动
 nav: true
 nav_order: 3
 images:
@@ -18,7 +21,8 @@ images:
 </style>
 
 <h4><a href="{{ '/activities/' | relative_url }}#icassp2026" style="color: inherit;">ICASSP 2026 — Barcelona</a> <small class="text-muted">May 3–9, 2026</small></h4>
-<p>Presented our work <em>MMSRFormer</em> at ICASSP 2026 in Barcelona. It was an amazing experience — met so many interesting people from all over the world and had a truly unforgettable journey.</p>
+<p data-lang="en">Presented our work <em>MMSRFormer</em> at ICASSP 2026 in Barcelona. It was an amazing experience — met so many interesting people from all over the world and had a truly unforgettable journey.</p>
+<p data-lang="zh" style="display: none;">在巴塞罗那举办的 ICASSP 2026 上展示了我们的工作 <em>MMSRFormer</em>。这是一次非常棒的经历——认识了来自世界各地的有趣的人，是一段非常难忘的旅程。</p>
 
 <div class="row mt-3" id="icassp2026">
     <div class="col-sm-6 mt-3 mt-md-0">
@@ -36,7 +40,8 @@ images:
 <hr>
 
 <h4><a href="{{ '/activities/' | relative_url }}#wuxi-marathon" style="color: inherit;">Wuxi Marathon 2026</a> <small class="text-muted">March 23, 2026</small></h4>
-<p>Haven't been training seriously for a year, but still managed to finish in 3:30 — a result I'm quite happy with! The Wuxi Marathon was a fantastic experience overall.</p>
+<p data-lang="en">Haven't been training seriously for a year, but still managed to finish in 3:30 — a result I'm quite happy with! The Wuxi Marathon was a fantastic experience overall.</p>
+<p data-lang="zh" style="display: none;">虽然已经一年没有系统训练了，但还是以 3:30 完赛——这是一个让我很满意的成绩！无锡马拉松整体体验也非常棒。</p>
 
 <div class="row mt-3" id="wuxi-marathon">
     <div class="col-sm-4 mt-3 mt-md-0">

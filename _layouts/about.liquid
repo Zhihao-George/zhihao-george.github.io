@@ -11,7 +11,10 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">
+      <span data-lang="en">{{ page.subtitle_en | default: page.subtitle }}</span>
+      <span data-lang="zh" style="display: none;">{{ page.subtitle_zh | default: page.subtitle }}</span>
+    </p>
   </header>
 
   <article>
@@ -51,7 +54,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit"><span data-i18n-en="Publications" data-i18n-zh="出版物">Publications</span></a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -59,7 +62,7 @@ layout: default
     <!-- Recent activities -->
     {% if page.show_activities %}
       <h2>
-        <a href="{{ '/activities/' | relative_url }}" style="color: inherit">Activities</a>
+        <a href="{{ '/activities/' | relative_url }}" style="color: inherit"><span data-i18n-en="Activities" data-i18n-zh="活动">Activities</span></a>
       </h2>
       <div class="row mt-2">
         {% for img in page.activity_images %}
@@ -75,7 +78,7 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2 style="margin-top: 2rem;">
-        Murmurs
+        <span data-i18n-en="Murmurs" data-i18n-zh="碎碎念">Murmurs</span>
       </h2>
       {% assign latest_posts_limit = page.latest_posts.limit | default: 3 %}
       {% for item in site.posts limit: latest_posts_limit %}
@@ -85,7 +88,7 @@ layout: default
               <span style="font-size: 1rem; font-weight: 500;">{{ item.title }}</span>
               <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ item.date | date: '%b %d, %Y' }}</span>
             </div>
-            <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">View more ▾</span>
+            <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;" data-state="closed"><span data-lang="en">View more ▾</span><span data-lang="zh" style="display: none;">查看更多 ▾</span></span>
           </div>
           <div id="murmur-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
             <div class="murmur-content">{{ item.content }}</div>
@@ -93,16 +96,24 @@ layout: default
         </div>
       {% endfor %}
       <script>
+        function setToggleLabel(toggle, expanded) {
+          toggle.setAttribute('data-state', expanded ? 'open' : 'closed');
+          toggle.innerHTML = expanded
+            ? '<span data-lang="en">Collapse ▴</span><span data-lang="zh" style="display: none;">收起 ▴</span>'
+            : '<span data-lang="en">View more ▾</span><span data-lang="zh" style="display: none;">查看更多 ▾</span>';
+          if (window.applySiteLanguage) window.applySiteLanguage();
+        }
+
         function toggleMurmur(id) {
           var el = document.getElementById(id);
           var idx = id.split('-')[1];
           var toggle = document.getElementById('murmur-toggle-' + idx);
           if (el.style.display === 'none') {
             el.style.display = 'block';
-            toggle.textContent = 'Collapse ▴';
+            setToggleLabel(toggle, true);
           } else {
             el.style.display = 'none';
-            toggle.textContent = 'View more ▾';
+            setToggleLabel(toggle, false);
           }
         }
       </script>
