@@ -19,9 +19,9 @@ images:
 谢谢你小龟，去龟星要继续幸福。
 
 <div class="row mt-3">
-    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+    <div class="col-sm-6 mt-3 mt-md-0 mx-auto">
         <a href="{{ 'assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg' | relative_url }}" data-lightbox="littleturtle" data-title="小龟在我们家过年">
-            <img src="{{ 'assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Little turtle at our home during Spring Festival">
+            <img src="{{ 'assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" style="height: 250px; object-fit: cover; width: 100%;" alt="Little turtle at our home during Spring Festival">
         </a>
     </div>
 </div>
