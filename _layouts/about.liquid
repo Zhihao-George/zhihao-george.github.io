@@ -75,26 +75,40 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2 style="margin-top: 2rem;">
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Murmurs</a>
+        Murmurs
       </h2>
-      <div class="row mt-2">
-        {% assign latest_posts_limit = page.latest_posts.limit | default: 3 %}
-        {% for item in site.posts limit: latest_posts_limit %}
-          <div class="col-sm-6 mt-3">
-            <a href="{{ item.url | relative_url }}" style="text-decoration: none; color: inherit;">
-              <div class="card" style="border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); border-radius: 10px; overflow: hidden;">
-                {% if item.thumbnail %}
-                  <img src="{{ item.thumbnail | relative_url }}" class="card-img-top" style="height: 200px; object-fit: cover; width: 100%;" alt="{{ item.title }}">
-                {% endif %}
-                <div class="card-body" style="padding: 15px;">
-                  <h5 class="card-title" style="margin: 0 0 8px 0; font-size: 1rem;">{{ item.title }}</h5>
-                  <p class="card-text" style="margin: 0; color: #888; font-size: 0.85rem;">{{ item.date | date: '%b %d, %Y' }}</p>
-                </div>
-              </div>
-            </a>
+      {% assign latest_posts_limit = page.latest_posts.limit | default: 3 %}
+      {% for item in site.posts limit: latest_posts_limit %}
+        <div class="murmur-item" style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
+          <div style="display: flex; align-items: center; gap: 15px; cursor: pointer;" onclick="toggleMurmur('murmur-{{ forloop.index }}')">
+            {% if item.thumbnail %}
+              <img src="{{ item.thumbnail | relative_url }}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" alt="{{ item.title }}">
+            {% endif %}
+            <div style="flex: 1;">
+              <div style="font-size: 1rem; font-weight: 500;">{{ item.title }}</div>
+              <div style="color: #888; font-size: 0.85rem; margin-top: 4px;">{{ item.date | date: '%b %d, %Y' }}</div>
+            </div>
+            <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">查看更多 ▾</span>
           </div>
-        {% endfor %}
-      </div>
+          <div id="murmur-{{ forloop.index }}" style="display: none; margin-top: 1rem; padding-left: 95px;">
+            <div class="murmur-content">{{ item.content }}</div>
+          </div>
+        </div>
+      {% endfor %}
+      <script>
+        function toggleMurmur(id) {
+          var el = document.getElementById(id);
+          var idx = id.split('-')[1];
+          var toggle = document.getElementById('murmur-toggle-' + idx);
+          if (el.style.display === 'none') {
+            el.style.display = 'block';
+            toggle.textContent = '收起 ▴';
+          } else {
+            el.style.display = 'none';
+            toggle.textContent = '查看更多 ▾';
+          }
+        }
+      </script>
     {% endif %}
 
     <!-- Social -->
