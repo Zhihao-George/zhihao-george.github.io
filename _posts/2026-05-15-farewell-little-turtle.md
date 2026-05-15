@@ -2,6 +2,8 @@
 title: Farewell, Little Turtle
 date: 2026-05-15
 description: Rest in peace, little one.
+images:
+  lightbox2: true
 ---
 
 今天，zk的小龟去世了。翻看到小龟在我们家过年的照片后，瞬间泪崩。说来愧疚，两年前姥爷过世，我好像都没有这么难受过——这可能是这几年我哭得最重的一次。
@@ -15,3 +17,11 @@ description: Rest in peace, little one.
 小龟也算陪伴了我整个三年读研时光，教会了我们很多事情：死亡、责任，还有帮助认识我们自己。它也算见证了我和zk从恋人到朋友的转变。我们也不后悔，因为我们（尤其是zk）给到了它最好的照顾。
 
 谢谢你小龟，去龟星要继续幸福。
+
+<div class="row mt-3">
+    <div class="col-sm-8 mt-3 mt-md-0 mx-auto">
+        <a href="{{ 'assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg' | relative_url }}" data-lightbox="littleturtle" data-title="小龟在我们家过年">
+            <img src="{{ 'assets/img/murmurs/littleturtle/IMG_20250127_142245.jpg' | relative_url }}" class="img-fluid rounded z-depth-1" alt="Little turtle at our home during Spring Festival">
+        </a>
+    </div>
+</div>
