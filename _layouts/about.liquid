@@ -81,16 +81,13 @@ layout: default
       {% for item in site.posts limit: latest_posts_limit %}
         <div class="murmur-item" style="margin-bottom: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 1rem;">
           <div style="display: flex; align-items: center; gap: 15px; cursor: pointer;" onclick="toggleMurmur('murmur-{{ forloop.index }}')">
-            {% if item.thumbnail %}
-              <img src="{{ item.thumbnail | relative_url }}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" alt="{{ item.title }}">
-            {% endif %}
             <div style="flex: 1;">
-              <div style="font-size: 1rem; font-weight: 500;">{{ item.title }}</div>
-              <div style="color: #888; font-size: 0.85rem; margin-top: 4px;">{{ item.date | date: '%b %d, %Y' }}</div>
+              <span style="font-size: 1rem; font-weight: 500;">{{ item.title }}</span>
+              <span style="color: #888; font-size: 0.85rem; margin-left: 10px;">{{ item.date | date: '%b %d, %Y' }}</span>
             </div>
             <span class="murmur-toggle" id="murmur-toggle-{{ forloop.index }}" style="color: #999; font-size: 0.85rem; white-space: nowrap;">查看更多 ▾</span>
           </div>
-          <div id="murmur-{{ forloop.index }}" style="display: none; margin-top: 1rem; padding-left: 95px;">
+          <div id="murmur-{{ forloop.index }}" style="display: none; margin-top: 1rem;">
             <div class="murmur-content">{{ item.content }}</div>
           </div>
         </div>
