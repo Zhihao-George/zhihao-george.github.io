@@ -1,6 +1,21 @@
 <header>
+  <style>
+    .navbar { background-color: var(--global-theme-color) !important; }
+    .navbar .nav-link { color: #ffffff !important; }
+    .navbar .nav-link:hover { color: #ffffff !important; }
+    .navbar .navbar-brand { color: #ffffff !important; }
+    .navbar .navbar-brand.social a i::before { color: #ffffff !important; }
+    .navbar .dropdown-menu { background-color: var(--global-theme-color) !important; }
+    .navbar .dropdown-item { color: #ffffff !important; }
+    .navbar .dropdown-item:hover { color: #ffffff !important; background-color: rgba(255,255,255,0.1) !important; }
+    #light-toggle { color: #ffffff !important; }
+    #search-toggle { color: #ffffff !important; }
+    .lang-toggle { color: #ffffff !important; border-color: rgba(255,255,255,0.5) !important; }
+    .lang-toggle-divider { color: rgba(255,255,255,0.5) !important; }
+    .navbar-toggler .icon-bar { background-color: #ffffff !important; }
+  </style>
   <!-- Nav Bar -->
-  <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
+  <nav id="navbar" class="navbar navbar-dark navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
       {% if page.permalink != '/' %}
         <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
@@ -48,8 +63,8 @@
 
           <!-- About -->
           <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              <span data-i18n-en="About" data-i18n-zh="关于">{{- about_title }}</span>
+            <a class="nav-link" href="{{ '/' | relative_url }}" style="color: #ffffff !important;">
+              <span data-i18n-en="About" data-i18n-zh="关于" style="color: #ffffff !important;">{{- about_title }}</span>
               {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
@@ -76,6 +91,7 @@
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    style="color: #ffffff !important;"
                   >
                     {{- p.title }}
                     {% if page.title == p.title or has_active_child %}
@@ -90,6 +106,7 @@
                         <a
                           class="dropdown-item {% if page.title == child.title %}active{% endif %}"
                           href="{% if child.permalink contains '://' %}{{ child.permalink }}{% else %}{{ child.permalink | relative_url }}{% endif %}"
+                          style="color: #ffffff !important;"
                         >
                           {{- child.title -}}
                         </a>
@@ -107,14 +124,14 @@
                   {%- else -%}
                     {%- assign url = p.url -%}
                   {%- endif %}
-                  <a class="nav-link" href="{{ url | relative_url }}">
+                  <a class="nav-link" href="{{ url | relative_url }}" style="color: #ffffff !important;">
                     {%- assign nav_zh = p.title -%}
                     {%- if p.title == 'Publications' -%}{%- assign nav_zh = '出版物' -%}
                     {%- elsif p.title == 'Activities' -%}{%- assign nav_zh = '活动' -%}
                     {%- elsif p.title == 'Projects' -%}{%- assign nav_zh = '项目' -%}
                     {%- elsif p.title == 'Murmurs' -%}{%- assign nav_zh = '碎碎念' -%}
                     {%- endif -%}
-                    <span data-i18n-en="{{ p.title }}" data-i18n-zh="{{ nav_zh }}">{{- p.title }}</span>
+                    <span data-i18n-en="{{ p.title }}" data-i18n-zh="{{ nav_zh }}" style="color: #ffffff !important;">{{- p.title }}</span>
                     {% if page.url contains p.url %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
@@ -127,7 +144,7 @@
             <!-- Search -->
             <li class="nav-item">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="nav-link" style="color: #ffffff !important;">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span>
               </button>
             </li>
           {% endif %}
