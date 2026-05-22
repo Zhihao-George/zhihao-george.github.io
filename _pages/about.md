@@ -41,6 +41,25 @@ latest_posts:
 <p data-lang="zh" style="display: none;">我也曾在<strong>智元机器人 (AGIBOT)</strong> 实习，近距离接触机器人和具身智能相关的工作。</p>
 <p data-lang="zh" style="display: none;">很高兴认识你～</p>
 
+### <span data-i18n-en="🎓 Education" data-i18n-zh="🎓 教育经历">🎓 Education</span>
+
+<table style="border: none; margin-bottom: 0.5rem;">
+  <tr style="background: none;">
+    <td style="vertical-align: middle; border: none; padding: 0.3rem 0.8rem 0.3rem 0; width: 45px;"><img src="{{ 'assets/img/edu/tsinghua.png' | relative_url }}" alt="Tsinghua" style="width: 40px; height: 40px; object-fit: contain;"></td>
+    <td style="vertical-align: middle; border: none; padding: 0.3rem 0;">
+      <strong><span data-i18n-en="Tsinghua University" data-i18n-zh="清华大学">Tsinghua University</span></strong> (2023–2026)<br>
+      <span data-i18n-en="M.Eng. in Information and Communication Engineering, Dept. of Electronic Engineering" data-i18n-zh="电子工程系 信息与通信工程专业 工学硕士">M.Eng. in Information and Communication Engineering, Dept. of Electronic Engineering</span>
+    </td>
+  </tr>
+  <tr style="background: none;">
+    <td style="vertical-align: middle; border: none; padding: 0.3rem 0.8rem 0.3rem 0; width: 45px;"><img src="{{ 'assets/img/edu/tianjin.png' | relative_url }}" alt="Tianjin" style="width: 40px; height: 40px; object-fit: contain;"></td>
+    <td style="vertical-align: middle; border: none; padding: 0.3rem 0;">
+      <strong><span data-i18n-en="Tianjin University" data-i18n-zh="天津大学">Tianjin University</span></strong> (2019–2023)<br>
+      <span data-i18n-en="B.E. in Communication Engineering, School of Electrical and Information Engineering" data-i18n-zh="电气自动化与信息工程学院 通信工程专业 工学学士">B.E. in Communication Engineering, School of Electrical and Information Engineering</span>
+    </td>
+  </tr>
+</table>
+
 ### <span data-i18n-en="📬 Contact" data-i18n-zh="📬 联系方式">📬 Contact</span>
 
 **Email**: [zhengzh23@mails.tsinghua.edu.cn](mailto:zhengzh23@mails.tsinghua.edu.cn)
