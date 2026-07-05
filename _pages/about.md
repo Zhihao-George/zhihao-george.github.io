@@ -62,7 +62,7 @@ latest_posts:
 
 ### <span data-i18n-en="📬 Contact" data-i18n-zh="📬 联系方式">📬 Contact</span>
 
-**Email**: [zhengzh23@mails.tsinghua.edu.cn](mailto:zhengzh23@mails.tsinghua.edu.cn)
+**Email**: [zhengzhihao26@foxmail.com](mailto:zhengzhihao26@foxmail.com)
 
 ### <span data-i18n-en="Interests" data-i18n-zh="兴趣爱好">Interests</span>
 
