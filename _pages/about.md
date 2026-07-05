@@ -2,8 +2,8 @@
 layout: about
 title: About
 permalink: /
-subtitle_en: "Master's student @ Dept. of Electronic Engineering, Tsinghua University"
-subtitle_zh: "清华大学电子工程系硕士生"
+subtitle_en: "Perception Algorithm Engineer @ Baidu Autonomous Driving"
+subtitle_zh: "百度自动驾驶 感知算法工程师"
 
 profile:
   align: right
@@ -31,13 +31,13 @@ latest_posts:
   limit: 3
 ---
 
-<p data-lang="en">Hi, I'm Zhihao Zheng (郑志浩, George), a Master's student at the <strong>Department of Electronic Engineering, Tsinghua University</strong> (2023-2026). I received my B.E. in Communication Engineering from <strong>Tianjin University</strong> (2019-2023).</p>
-<p data-lang="zh" style="display: none;">哈喽哈喽，我是郑志浩，也可以叫我 George。目前在清华大学电子工程系读硕士（2023-2026），本科毕业于天津大学通信工程专业。</p>
+<p data-lang="en">Hi, I'm Zhihao Zheng (郑志浩, George), a Perception Algorithm Engineer at <strong>Baidu Autonomous Driving</strong>. I received my M.Eng. from the <strong>Department of Electronic Engineering, Tsinghua University</strong> (2023-2026) and my B.E. in Communication Engineering from <strong>Tianjin University</strong> (2019-2023).</p>
+<p data-lang="zh" style="display: none;">哈喽哈喽，我是郑志浩，也可以叫我 George。目前就职于<strong>百度自动驾驶</strong>，担任感知算法工程师。硕士毕业于清华大学电子工程系（2023-2026），本科毕业于天津大学通信工程专业（2019-2023）。</p>
 
-<p data-lang="en">My research interests lie in <strong>perception</strong> and <strong>Vision-Language-Action (VLA)</strong> models, with a focus on multimodal understanding and embodied intelligence.</p>
-<p data-lang="zh" style="display: none;">我对<strong>感知</strong>和<strong>视觉-语言-动作 (VLA)</strong> 模型很感兴趣，最近主要关注多模态理解、具身智能还有自动驾驶，希望能让模型更好地理解真实世界并和它互动。</p>
+<p data-lang="en">My research interests lie in <strong>perception</strong> and <strong>Vision-Language-Action (VLA)</strong> models, with a focus on multimodal understanding, embodied intelligence, and autonomous driving.</p>
+<p data-lang="zh" style="display: none;">我对<strong>感知</strong>和<strong>视觉-语言-动作 (VLA)</strong> 模型很感兴趣，主要关注多模态理解、具身智能和自动驾驶，希望能让模型更好地理解真实世界并和它互动。</p>
 
-<p data-lang="en">Previously, I interned at <strong>AGIBOT</strong> (智元机器人).</p>
+<p data-lang="en">Previously, I interned at <strong>AGIBOT</strong> (智元机器人), working on embodied intelligence and robotics.</p>
 <p data-lang="zh" style="display: none;">我也曾在<strong>智元机器人 (AGIBOT)</strong> 实习，近距离接触机器人和具身智能相关的工作。</p>
 <p data-lang="zh" style="display: none;">很高兴认识你～</p>
 
