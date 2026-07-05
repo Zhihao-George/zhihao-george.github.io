@@ -1,10 +1,10 @@
 cv:
   name: Zhihao Zheng
-  label: Master's Student in Information and Communication Engineering
+  label: Perception Algorithm Engineer @ Baidu Autonomous Driving
   email: zhengzhihao26@foxmail.com
   location: Beijing, China
   image: ""
-  summary: Master's student at Tsinghua University, researching AI for wireless communications, integrated sensing and communication, and multimodal perception.
+  summary: Perception Algorithm Engineer at Baidu Autonomous Driving. Received M.Eng. from Tsinghua University (2023-2026) and B.E. from Tianjin University (2019-2023). Focused on perception, Vision-Language-Action (VLA) models, multimodal understanding, and autonomous driving.
 
   social_networks:
     - network: GitHub
@@ -24,6 +24,12 @@ cv:
       end_date: 2023
 
   work:
+    - company: Baidu (百度)
+      position: Perception Algorithm Engineer
+      start_date: 2026-07
+      end_date: present
+      summary: Working on perception algorithms for Baidu Autonomous Driving.
+
     - company: Zhiyuan Robot (智元机器人)
       position: Intern
       start_date: 2025-06
@@ -40,7 +46,7 @@ cv:
       authors: Zhihao Zheng et al.
 
     - title: "EVAFusion: Environment-Aware Fusion with Conditional Modulation for Multimodal Segmentation"
-      venue: Under Review
+      venue: IEEE Access 2026
       authors: Zhihao Zheng et al.
 
   projects:
