@@ -7,4 +7,4 @@ github: https://github.com/Zhihao-George/RadioMap-XAI
 redirect: https://github.com/Zhihao-George/RadioMap-XAI
 ---
 
-An open-source implementation of **"Beyond Accuracy: An Explainable Radio Map Prediction Framework via Physical Alignment and Attribution-Based Diagnostics"**.
+An open-source implementation of **"Beyond Accuracy: An Explainable Radio Map Prediction Framework via Physical Alignment and Attribution-Based Diagnostics"**, published in **IEEE Communications Magazine** (IF: 8.4, JCR Q1).

@@ -37,6 +37,10 @@ cv:
       summary: Worked on robotics development and model fine-tuning at Zhiyuan Robot.
 
   publications:
+    - title: "Beyond Accuracy: An Explainable Radio Map Prediction Framework via Physical Alignment and Attribution-Based Diagnostics"
+      venue: IEEE Communications Magazine 2026 (IF 8.4, JCR Q1)
+      authors: Zhihao Zheng et al.
+
     - title: "Efficient Indoor Radio Map Prediction with Improved Transformers and Active Sampling Strategies"
       venue: MLSP 2025 (IEEE Signal Processing Society Conference)
       authors: Zhihao Zheng et al.
